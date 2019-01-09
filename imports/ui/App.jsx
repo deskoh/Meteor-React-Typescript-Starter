@@ -1,4 +1,3 @@
-// import * as React from 'react';
 import React from 'react';
 import Hello from './Hello';
 import Info from './Info';

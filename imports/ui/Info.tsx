@@ -1,15 +1,15 @@
 import * as React from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
-import Links from '../api/links';
+import Links from 'imports/api/links';
 
 export interface InfoProps {
-  links: string[]
+  links: string[];
 }
 
 class Info extends React.Component<InfoProps, {}> {
-  render() {
+  public render() {
     const links = this.props.links.map(
-      link => this.makeLink(link)
+      (link) => this.makeLink(link)
     );
 
     return (
@@ -20,7 +20,7 @@ class Info extends React.Component<InfoProps, {}> {
     );
   }
 
-  makeLink(link) {
+  private makeLink(link) {
     return (
       <li key={link._id}>
         <a href={link.url} target="_blank">{link.title}</a>
