@@ -22,6 +22,6 @@ Chrome Debugging requires [`chrome`](https://marketplace.visualstudio.com/items?
 meteor npm install
 # Run project
 meteor run
-# Run in debug more
+# Run in debug mode
 meteor npm run debug
 ```

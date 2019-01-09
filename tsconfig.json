@@ -8,7 +8,17 @@
     "jsx": "react",
     "allowJs": true,
     "noImplicitAny": false,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "typeRoots": [
+      "node_modules/@types",
+      "./@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "*"
+      ]
+    }
   },
   "include": [
     "client/**/*",
