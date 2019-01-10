@@ -12,10 +12,12 @@
     "@babel/runtime": "^7.1.5",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.5.0",
-    "react-dom": "^16.5.0"
+    "react-dom": "^16.5.0",
+    "simpl-schema": "^1.5.3"
   },
   "devDependencies": {
     "@types/meteor": "^1.4.24",
-    "@types/react": "^16.7.18"
+    "@types/react": "^16.7.18",
+    "@types/simpl-schema": "^0.1.0"
   }
 }
