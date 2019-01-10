@@ -16,7 +16,7 @@ declare module "meteor/mongo" {
     }
 
     interface Collection<T> {
-      schema?: typeof SimpleSchema;
+      schema?: SimpleSchema;
       /**
        * Use this method to attach a schema to a collection created by another package,
        * such as Meteor.users. It is most likely unsafe to call this method more than
@@ -26,7 +26,7 @@ declare module "meteor/mongo" {
        * @param options Options
        *
        */
-      attachSchema(ss: typeof SimpleSchema, options?: SchemaOptions): void;
+      attachSchema(ss: SimpleSchema, options?: SchemaOptions): void;
     }
   }
 }
