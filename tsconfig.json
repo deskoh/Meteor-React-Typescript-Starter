@@ -22,7 +22,8 @@
   },
   "include": [
     "client/**/*",
-    "server/**/*"
+    "server/**/*",
+    "imports/**/*"
   ],
   "exclude": [
     "node_modules",
