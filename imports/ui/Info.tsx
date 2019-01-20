@@ -15,12 +15,12 @@ class Info extends React.Component<InfoProps, {}> {
     return (
       <div>
         <h2>Learn Meteor!</h2>
-        <ul>{ links }</ul>
+        <ul>{links}</ul>
       </div>
     );
   }
 
-  private makeLink(link) {
+  private makeLink(link: any) {
     return (
       <li key={link._id}>
         <a href={link.url} target="_blank">{link.title}</a>

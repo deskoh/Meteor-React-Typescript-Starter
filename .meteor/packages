@@ -19,3 +19,7 @@ insecure@1.0.7                # Allow all DB writes from clients (for prototypin
 static-html             # Define static page content in .html files
 react-meteor-data       # React higher-order component for reactively tracking Meteor data
 barbatus:typescript
+mdg:validated-method
+aldeed:collection2
+meteortesting:mocha
+jquery

@@ -2,9 +2,17 @@
 
 ## Meteor Packages
 
-`barbatus:typescript`: To support TypeScript.
+[`barbatus:typescript`](https://atmospherejs.com/barbatus/typescript): To support TypeScript. [[GitHub Home](https://github.com/barbatus/typescript)]
 
-`ecmascript`: Required for if source contains JavaScript files. Can be removed if using TypeScript fully.
+[`ecmascript`](https://atmospherejs.com/meteor/ecmascript): Required for if source contains JavaScript files. Can be removed if using TypeScript fully.
+
+[`mdg:validated-method`](https://atmospherejs.com/mdg/validated-method): Wrapper for Meteor methods. See [Meteor Guide](https://guide.meteor.com/methods.html#validated-method) for details. Typings in `/@types` folder. [[GitHub Home](https://github.com/meteor/validated-method)]
+
+[`aldeed:collection2`](https://atmospherejs.com/aldeed/collection2): For schema validation on write. See [Meteor Guide](https://guide.meteor.com/collections.html#schemas-on-write) for details. Typings in `/@types` folder. [[GitHub Home](https://github.com/aldeed/meteor-collection2)]
+
+[`meteortesting:mocha`](https://atmospherejs.com/meteortesting/mocha): Meteor testing package. See [Meteor Guide](https://guide.meteor.com/testing.html) for more details.
+
+`jquery`: Required for `meteortesting:mocha` in browser testing to work?
 
 ## Meteor Typings
 

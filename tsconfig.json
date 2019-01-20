@@ -6,8 +6,14 @@
     "alwaysStrict": true,
     "sourceMap": true,
     "jsx": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "es6",
+      "scripthost"
+    ],
     "allowJs": true,
-    "noImplicitAny": false,
+    "noImplicitAny": true,
     "strictNullChecks": true,
     "typeRoots": [
       "node_modules/@types",
@@ -18,7 +24,8 @@
       "*": [
         "*"
       ]
-    }
+    },
+    "outDir": "dist"
   },
   "include": [
     "client/**/*",
