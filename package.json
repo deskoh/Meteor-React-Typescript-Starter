@@ -5,8 +5,20 @@
     "start": "meteor run",
     "debug": "meteor run --inspect",
     "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test:watch": "cross-env TEST_WATCH=1 meteor test --once --driver-package meteortesting:mocha",
     "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
-    "visualize": "meteor --production --extra-packages bundle-visualizer"
+    "visualize": "meteor --production --extra-packages bundle-visualizer",
+    "test:coverage": "cross-env NODE_ENV=COVERAGE TEST_BROWSER_DRIVER=chrome COVERAGE=1 COVERAGE_OUT_HTML=1 COVERAGE_OUT_LCOVONLY=1 COVERAGE_APP_FOLDER=%CD% meteor test --once --driver-package meteortesting:mocha",
+    "test:watch:coverage": "cross-env NODE_ENV=COVERAGE COVERAGE=1 COVERAGE_VERBOSE=1 COVERAGE_APP_FOLDER=%CD% TEST_WATCH=1 meteor test --driver-package meteortesting:mocha"
+  },
+  "babel": {
+    "env": {
+      "COVERAGE": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    }
   },
   "dependencies": {
     "@babel/runtime": "^7.1.5",
@@ -25,10 +37,13 @@
     "@types/react-dom": "^16.0.11",
     "@types/simpl-schema": "^0.2.1",
     "@types/sinon": "^7.0.4",
+    "babel-plugin-istanbul": "^5.1.0",
     "chai": "^4.2.0",
+    "chromedriver": "^2.45.0",
+    "cross-env": "^5.2.0",
     "enzyme": "^3.8.0",
     "enzyme-adapter-react-16": "^1.7.1",
-    "mocha": "^5.2.0",
+    "selenium-webdriver": "^3.6.0",
     "sinon": "^7.2.3",
     "tslint": "^5.12.1",
     "tslint-react": "^3.6.0",

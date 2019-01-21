@@ -18,8 +18,8 @@ autopublish@1.0.7             # Publish all data to the clients (for prototyping
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 static-html             # Define static page content in .html files
 react-meteor-data       # React higher-order component for reactively tracking Meteor data
+lmieulet:meteor-coverage@3.1.1
+meteortesting:mocha@1.1.1
 barbatus:typescript
 mdg:validated-method
 aldeed:collection2
-meteortesting:mocha
-jquery
