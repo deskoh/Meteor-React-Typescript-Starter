@@ -39,3 +39,19 @@ meteor run
 # Run in debug mode
 meteor npm run debug
 ```
+
+## Test Coverage (WIP)
+
+### Known Issues:
+
+1. Static assets for coverage HTML reports cannot be generated properly.
+
+2. `lmieulet:meteor-coverage@3.1.1` not working well for TypeScript source files.
+
+> Note: The following packages must be in `.meteor/packages` in the following order for test coverage to work: `lmieulet:meteor-coverage@3.1.1`, `jquery`, `lmieulet:meteor-coverage@1.1.4`.
+
+> Linux Users: Change `%CD%` to `$PWD/` for npm scripts in package.json.
+
+```
+npm run test:coverage
+```
