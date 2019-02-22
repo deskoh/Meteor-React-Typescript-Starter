@@ -15,8 +15,6 @@
 
 [`meteortesting:mocha`](https://atmospherejs.com/meteortesting/mocha): Meteor testing package. See [Meteor Guide](https://guide.meteor.com/testing.html) for more details.
 
-`jquery`: Required for `meteortesting:mocha` in browser testing to work?
-
 ## Meteor Typings
 
 Meteor TypeScript definitions are stored in `@types` folder, which are included in `typeRoots` option in `tsconfig.json`.
