@@ -6,7 +6,7 @@ export interface InfoProps {
   links: string[];
 }
 
-class Info extends React.Component<InfoProps, {}> {
+export class Info extends React.Component<InfoProps, {}> {
   public render() {
     const links = this.props.links.map(
       (link) => this.makeLink(link)

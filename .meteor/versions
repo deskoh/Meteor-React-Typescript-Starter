@@ -37,15 +37,14 @@ http@1.4.2
 id-map@1.1.0
 insecure@1.0.7
 inter-process-messaging@0.1.0
-jquery@1.11.11
 launch-screen@1.1.1
 livedata@1.0.18
-lmieulet:meteor-coverage@1.1.4
+lmieulet:meteor-coverage@3.2.0
+lmieulet:meteor-legacy-coverage@0.1.0
 logging@1.1.20
 mdg:validated-method@1.2.0
 meteor@1.9.2
 meteor-base@1.4.0
-meteorhacks:picker@1.0.3
 meteortesting:browser-tests@1.2.0
 meteortesting:mocha@1.1.1
 meteortesting:mocha-core@5.2.0_3

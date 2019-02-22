@@ -9,10 +9,15 @@ if (Meteor.isClient) {
   import Info from './Info';
   configure({ adapter: new Adapter() });
 
-  describe('Info', async () => {
+  describe('Info', () => {
 
     it('should render correctly', () => {
       const wrapper = shallow(<Info />);
+      expect(wrapper).lengthOf(1);
+    });
+
+    it('should render links correctly', () => {
+      const wrapper = shallow(<Info links={[{url: 'test', title: 'test'}]} />);
       expect(wrapper).lengthOf(1);
     });
 

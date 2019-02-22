@@ -9,7 +9,7 @@ if (Meteor.isClient) {
   import Hello from './Hello';
   configure({ adapter: new Adapter() });
 
-  describe('HelloJS', async () => {
+  describe('HelloJS', () => {
 
     it('should count correctly', () => {
       const wrapper = shallow(<Hello />);

@@ -1,5 +1,8 @@
 # Meteor React Typescript Starter Project
 
+[![dependencies Status](https://david-dm.org/deskoh/Meteor-React-Typescript-Starter/status.svg)](https://david-dm.org/deskoh/Meteor-React-Typescript-Starter)
+[![devDependencies Status](https://david-dm.org/deskoh/Meteor-React-Typescript-Starter/dev-status.svg)](https://david-dm.org/deskoh/Meteor-React-Typescript-Starter?type=dev)
+
 ## Meteor Packages
 
 [`barbatus:typescript`](https://atmospherejs.com/barbatus/typescript): To support TypeScript. [[GitHub Home](https://github.com/barbatus/typescript)]
@@ -40,18 +43,15 @@ meteor run
 meteor npm run debug
 ```
 
-## Test Coverage (WIP)
-
-### Known Issues:
-
-1. Static assets for coverage HTML reports cannot be generated properly.
-
-2. `lmieulet:meteor-coverage@3.1.1` not working well for TypeScript source files.
-
-> Note: The following packages must be in `.meteor/packages` in the following order for test coverage to work: `lmieulet:meteor-coverage@3.1.1`, `jquery`, `lmieulet:meteor-coverage@1.1.4`.
+## Test Coverage
 
 > Linux Users: Change `%CD%` to `$PWD/` for npm scripts in package.json.
 
-```
+```bash
+# Generate coverage report
 npm run test:coverage
+
+# Run test and coverage in watch mode
+# browse to localhost:3000 and localhost:3000/coverage
+npm run test:watch:coverage
 ```

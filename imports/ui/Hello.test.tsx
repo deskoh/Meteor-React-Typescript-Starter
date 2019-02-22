@@ -13,7 +13,7 @@ if (Meteor.isClient) {
     Hello = HelloImport.default;
   });
 
-  describe('Hello', async () => {
+  describe('Hello', () => {
 
     it('should count correctly', () => {
       const wrapper = shallow(<Hello />);
